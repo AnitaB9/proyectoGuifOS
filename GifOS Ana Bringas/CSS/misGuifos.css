@@ -1,0 +1,43 @@
+.misGuifosHeader {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 17px;
+    height: 32px;
+    width: 1200px;    
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+}
+
+.misGuifosHeaderText {
+    font-family: 'Chakra Petch',sans-serif;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    margin:7px;
+}
+
+.misGuifosBody {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+    margin-left: 100px;
+    margin-right: 140px; 
+}
+
+.misGuifosContent {
+    width: 288px;
+    height: 298px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.misGifImg {
+    width: 288px;
+    height: 298px;
+}

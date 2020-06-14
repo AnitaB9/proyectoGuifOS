@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/misGuifos.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>Mis Guifos</title>
+</head>
+<body>
+
+    <header class="theme" id="principal">
+    </header>
+    <div class="main">
+        <section class= "primera">
+            <div class= "logo">
+                <img src="assets/gifOF_logo.png" alt="logo_light" id="light_logo">
+                <img src="assets/gifOF_logo_dark.png" alt="logo_dark" id="dark_logo">
+            </div>
+            <div class="botones">
+                <div class= "menu">
+                    <button class= "btn" id="Crear">Crear Gifos</button>
+                    <button class= "btn" id="Tema" onclick="mostrarMenu()">Elegir Tema</button>
+                    <div class="drop-menu">
+                        <button class="btn" id="flecha" onclick="mostrarMenu()"> <img src="assets/dropdown.svg" alt="flecha" id="drop"></button>
+                        <div class="menu_dropdown">
+                            <ul>
+                                <li class="theme_btn" onclick="lightTheme()"><u>S</u>ailor Day</li>
+                                <li class="theme_btn" onclick="darkTheme()">Sailor night</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+                <button class="mis-guifos"><u>M</u>is Guifos</button>
+            </div>
+        </section>
+        
+        <div class="misGuifos">
+            <div class="misGuifosHeader">
+                <p class="misGuifosHeaderText">Mis guifos</p>
+            </div>
+        
+            <div class="misGuifosBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/misGuifos.js"></script>
+</body>
+</html>

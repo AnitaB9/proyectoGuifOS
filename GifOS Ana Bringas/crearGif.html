@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "CSS/crearGif.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>CrearGif</title>
+</head>
+<body>
+    <header class="theme" id="principal">
+    </header>
+    <div class="main">
+        <div class="divLogo">
+            <a href="./index.html"><img class="arrow-img" src="assets/arrow.svg" alt=""></a>
+            <img src="assets/gifOF_logo.png" alt="logo_light" id="light_logo">
+            <img src="assets/gifOF_logo_dark.png" alt="logo_dark" id="dark_logo">
+        </div>
+        <div class="crearGuifos">
+            <div class="tittle">
+                <p><b>Crear Guifos</b></p>
+            </div>
+            <div class="crearGuifos-contenido">
+                <div class="crearGuifos-coontenido-tittle">
+                    <img src="assets/windowimg.png" alt="">
+                    <p><b>Aquí podrás crear tus propios guifos</b></p>
+                </div>
+                <div class="crear-guifos-contenido-text">
+                    <p>Crear tu <em><b>guifo</b></em> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                        personalizados. Los pasos para crear tu guifo son:</p>
+                    <br>
+                    <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <br>
+                    <p><b>2)</b> Capturar tu momento guifo</p>
+                    <br>
+                    <p><b>3)</b> Revisar el momento</p>
+                    <br>
+                    <p><b>4)</b> Listo para subir y compartir!</p>
+                    <br>
+                    <p>¿Quieres comenzar a crear tu <em><b>guifo</b></em> ahora?</p>
+                </div>
+                <div class="crear-guifos-botones">
+                    <button class="btn-crear" id="cancelar">Cancelar</button>
+                    <button class="btn-crear" id="comenzar">Comenzar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grabarGuifos">
+            <div class="tittle" id="grabarTittle">
+                <p id="tituloEliminar">Un chequeo antes de empezar</p>
+                <img  class="close-btn" src="assets/close.svg" alt="botón para cerrar gif">
+            </div>
+            <div class="grabarGuifos-contenido">
+                <video class="video"></video>
+            </div>
+            <div class="capturar-guifos-botones">
+                <button class="btn-capturar" id="camara"><img src="./assets/camera.svg" alt=""></button>
+                <button class="btn-capturar" id="camaraDark"><img src="./assets/camera_light.svg" alt=""></button>
+                <button class="btn-capturar" id="capturar">Capturar</button>
+            </div>
+            <div class="capturando-btn">
+                <input class="input-timer" type="text" placeholder="00:00:00:00" disabled>
+                <div class="capt-btn">
+                    <button class="recording-boton"><img src="./assets/recording.svg" alt=""></button>
+                    <button class="capturando-boton">Listo</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="vistaPreviaGuifos">
+            <div class="tittle" id= "vistaPreviaTittle">
+                <p>Vista Previa</p>
+            </div>
+            <div class="grabarGuifos-contenido" id="videoContenedor">
+            </div>
+            <div class="vistaPrevia-guifos-botones">
+                <input class="input-timer" type="text" placeholder="00:00:05:00" disabled>
+                <button class="playBtn"><img src="./assets/forward.svg" alt=""></button>
+                <div class="vistaPrevia-barra">
+                    <div class="barra-progresiva-rosa"></div>
+                    <div class="barra-progresiva-rosa"></div>
+                    <div class="barra-progresiva-rosa"></div>
+                    <div class="barra-progresiva-rosa"></div>
+                    <div class="barra-progresiva-rosa"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                    <div class="barra-progresiva"></div>
+                </div>
+                <button class="btn-crear" id="repetir">Repetir Captura</button>
+                <button class="btn-crear" id="subir">Subir Guifo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-subiendo-guifos">
+        <div class="tittle" id="subiendoTittle">
+            <p>Subiendo Guifo</p>
+            <img class="close-img" src="./assets/button_close.svg" alt="botón para cerrar gif">
+        </div>
+        <div class="subiendo-guifos-contenido">
+            <img src="./assets/globe_img.png" alt="">
+            <h4>Estamos subiendo tu guifo...</h4>
+            <div class="subiendo-barra">
+                <div class="barra-progresiva-rosa"></div>
+                <div class="barra-progresiva-rosa"></div>
+                <div class="barra-progresiva-rosa"></div>
+                <div class="barra-progresiva-rosa"></div>
+                <div class="barra-progresiva-rosa"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+                <div class="barra-progresiva"></div>
+            </div>
+            <h5>Tiempo restante: <span>38 años</span> algunos minutos</h5>
+        </div>
+        <div class="subiendo-guifos-botones">
+            <button class="subiendo-cancelar-boton">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="contenedor-exito-guifos">
+        <div class="tittle" id="ExitoTittle">
+            <p>Guifo Subido Con Éxito</p>
+            <img class="close-img2" src="./assets/button_close.svg" alt="botón para cerrar gif">
+        </div>
+        <div class="subido-exito">
+            <div class="exito-guifos-contenido">
+            </div>
+            <div class="exito-guifos-botones">
+                <h3>Guifo creado con éxito</h3>
+                <button class="copiar">Copiar Enlace Guifo</button>
+                <a class="descargar" href="">Descargar Guifo</a>
+                <button class="listo">Listo</button>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <div class="misGuifos">
+        <div class="misGuifosHeader">
+            <p class="misGuifosHeaderText">Mis guifos</p>
+        </div>
+    
+        <div class="misGuifosBody">
+        </div>
+    </div>
+    
+    <script src="./js/crearGif.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+</body>
+</html>
